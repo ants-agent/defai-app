@@ -42,7 +42,7 @@ const navItems = [
   { label: 'Docs', href: 'https://docs.antsai.io', icon: BookOpenIcon, target: '_blank' },
 ];
 
-export const Header = ({ handleLogin }: { handleLogin: () => void }) => {
+const Header = ({ handleLogin }: { handleLogin: () => void }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -371,7 +371,7 @@ const Features = () => {
   );
 };
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="mt-auto py-4">
       <BlurFade
