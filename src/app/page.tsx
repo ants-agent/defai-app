@@ -152,35 +152,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
   return (
     <section className="relative pt-[5.75rem]" ref={productRef}>
       {/* Content */}
-      <div className="relative mx-auto max-w-screen-xl px-6 pb-6 pt-12 text-center md:pb-8 md:pt-16">
-        <div className="mx-auto max-w-3xl">
-          <BlurFade delay={0.3} className="pointer-events-none select-none">
-            
-            <h1 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-            A  Framework for{' '}
-              <AnimatedShinyText className="inline">
-                <span>AI Agent</span>
-              </AnimatedShinyText>{' '}
-               <span> Orchestration and Collaboration</span>
-            </h1>
-
-            <p className="mt-4 text-lg text-muted-foreground">
-              Decentralize the Bridge between AI and Blockchain World
-            </p>
-          </BlurFade>
-
-          <BlurFade delay={0.4}>
-            <div className="mt-8">
-              <RainbowButton
-                onClick={handleLogin}
-                className="h-12 min-w-[180px] text-base transition-all duration-300 hover:scale-105"
-              >
-                Getting Started
-              </RainbowButton>
-            </div>
-          </BlurFade>
-        </div>
-      </div>
+     
 
       {/* Product Preview */}
       <div className="relative w-full">
