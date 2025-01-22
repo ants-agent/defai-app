@@ -31,7 +31,7 @@ interface BrandProps {
 
 export function Brand({ className }: BrandProps) {
   return (
-    <Link href="/" className={className}>
+    <Link href="https://antsai.io" target="_blank" className={className}>
       <div className="flex items-center gap-2">
         <Logo width={32} />
         <span className="text-x select-none font-bold">Ants AI</span>
