@@ -24,16 +24,10 @@ import {
 
 import { Brand } from '@/components/logo';
 import { AiParticlesBackground } from '@/components/ui/ai-particles-background';
-import AnimatedShinyText from '@/components/ui/animated-shiny-text';
-import { BentoCard, BentoGrid } from '@/components/ui/bento-grid';
 import BlurFade from '@/components/ui/blur-fade';
 import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
-import { IntegrationsBackground } from '@/components/ui/integrations-background';
-import Marquee from '@/components/ui/marquee';
-import { RainbowButton } from '@/components/ui/rainbow-button';
-import { cn } from '@/lib/utils';
-import { IntegrationsGrid } from './(user)/home/components/integrations-grid';
+
 
 const navItems = [
   { label: 'Recruiting', href: '/recruiting', icon: ClipboardCheck, target: '_self' },
@@ -151,10 +145,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
 
   return (
     <section className="relative pt-[5.75rem]" ref={productRef}>
-      {/* Content */}
-     
 
-      {/* Product Preview */}
       <div className="relative w-full">
         <BlurFade delay={0.6} className="mx-auto max-w-screen-2xl px-6">
           <div className="relative">
@@ -267,8 +258,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      {/* Temporarily disabled particle background */}
-      {/* <AiParticlesBackground /> */}
       <AiParticlesBackground />
       <Header handleLogin={login} />
       <main className="flex-1">
