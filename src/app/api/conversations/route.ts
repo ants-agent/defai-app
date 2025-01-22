@@ -13,7 +13,9 @@ export async function GET(req: NextRequest) {
     }
 
     const conversations = await dbGetConversations({ userId });
-    return NextResponse.json(conversations);
+    
+    // Ensure we're returning an empty array if conversations is undefined
+    return NextResponse.json(conversations || []);
   } catch (error) {
     console.error('Error fetching conversations:', error);
     return NextResponse.json(
