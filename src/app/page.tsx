@@ -178,6 +178,14 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
                     className="w-full rounded-2xl"
                     priority
                   />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <button 
+                      onClick={handleLogin}
+                      className="px-10 py-6 bg-blue-500 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg transform transition hover:scale-105"
+                    >
+                      Login to Try Ants AI
+                    </button>
+                  </div>
                 </div>
                 {/* Dark mode image */}
                 <div className="relative hidden dark:block">
