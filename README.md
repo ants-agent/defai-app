@@ -6,6 +6,7 @@
 
 # Build Locally
 
+
 ```
 npx prisma generate
 pnpm run vercel-build
