@@ -29,9 +29,8 @@ export const metadata: Metadata = {
     default: 'Ants AI - Decentralize the Bridge between AI and Blockchain World',
   },
   description: 'Decentralize the Bridge between AI and Blockchain World',
-
   icons: {
-    icon: '/favicon.svg',
+    icon: '/logo.svg',
   },
 };
 
