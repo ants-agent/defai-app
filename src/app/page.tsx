@@ -171,7 +171,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
                 {/* Light mode image */}
                 <div className="relative dark:hidden">
                   <Image
-                    src="/banner-2to1.png"
+                    src="/landing_page_defai.png"
                     alt="Ants AI Interface"
                     width={1200}
                     height={675}
@@ -190,7 +190,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
                 {/* Dark mode image */}
                 <div className="relative hidden dark:block">
                   <Image
-                    src="/banner-2to1.png"
+                    src="/landing_page_defai.png"
                     alt="Ants AI Interface"
                     width={1200}
                     height={675}
