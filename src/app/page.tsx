@@ -30,7 +30,7 @@ import { Button } from '@/components/ui/button';
 
 
 const navItems = [
-  { label: 'Recruiting', href: '/recruiting', icon: ClipboardCheck, target: '_self' },
+  { label: 'Recruiting', href: 'https://docs.antsai.io/joinus', icon: ClipboardCheck, target: '_blank' },
   { label: 'Github', href: 'https://git.new/ants-agent', icon: GitHubLogoIcon, target: '_blank' },
   { label: 'Discord', href: 'https://dub.sh/antsai', icon: DiscordLogoIcon, target: '_blank' },
   { label: 'Docs', href: 'https://docs.antsai.io', icon: BookOpenIcon, target: '_blank' },
