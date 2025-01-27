@@ -4,6 +4,8 @@ import { PrivyProvider } from '@privy-io/react-auth';
 import { toSolanaWalletConnectors } from '@privy-io/react-auth/solana';
 import { useTheme } from 'next-themes';
 
+import { RPC_URL } from '@/lib/constants';
+
 const solanaConnectors = toSolanaWalletConnectors({
   shouldAutoConnect: false,
 });
@@ -22,12 +24,16 @@ export default function AuthProviders({
         appearance: {
           theme: resolvedTheme as 'light' | 'dark',
           logo: resolvedTheme === 'dark' ? '/logo_w.svg' : '/logo.svg',
+          //showWalletLoginFirst: true, 
+          //walletChainType: 'solana-only',
+          //walletList: ["phantom", 'rainbow', 'wallet_connect',"uniswap"], 
         },
         externalWallets: {
           solana: {
-            connectors: solanaConnectors,
+            connectors: solanaConnectors as any,
           },
         },
+        solanaClusters: [{ name: 'mainnet-beta', rpcUrl: RPC_URL }],
       }}
     >
       {children}

@@ -28,7 +28,7 @@ import { ConversationInput } from './conversation-input';
 import { getRandomSuggestions } from './data/suggestions';
 import { SuggestionCard } from './suggestion-card';
 
-const EAP_PRICE = process.env.NEXT_PUBLIC_EAP_PRICE!;
+const EAP_PRICE = parseFloat(process.env.NEXT_PUBLIC_EAP_PRICE!);
 const RECEIVE_WALLET_ADDRESS =
   process.env.NEXT_PUBLIC_EAP_RECEIVE_WALLET_ADDRESS!;
 
