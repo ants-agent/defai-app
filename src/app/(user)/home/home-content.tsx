@@ -84,10 +84,11 @@ export function HomeContent() {
   // Verification effect
   useEffect(() => {
     if (!verifyingTx) return;
-
+    
     const verify = async () => {
       try {
         const response = await checkEAPTransaction({ txHash: verifyingTx });
+        
         if (response?.data?.success) {
           toast.success('EAP Purchase Successful', {
             description:
@@ -152,6 +153,7 @@ export function HomeContent() {
       });
 
       if (tx) {
+        
         setVerifyingTx(tx);
         toast.success('Transaction Sent', {
           description: 'Transaction has been sent. Verifying your purchase...',

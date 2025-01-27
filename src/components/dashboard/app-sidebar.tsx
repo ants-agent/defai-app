@@ -28,7 +28,7 @@ const AppSidebarHeader = () => {
     <SidebarHeader>
       <div className="flex items-center justify-between px-1">
         <span className="pl-2 text-lg font-medium tracking-tight group-data-[collapsible=icon]:hidden">
-          DEFAI @Ants AI
+          Ants AI
         </span>
         <div className="flex items-center gap-1.5">
           <ThemeToggle />
