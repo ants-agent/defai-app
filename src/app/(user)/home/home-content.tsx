@@ -28,7 +28,7 @@ import { ConversationInput } from './conversation-input';
 import { getRandomSuggestions } from './data/suggestions';
 import { SuggestionCard } from './suggestion-card';
 
-const EAP_PRICE = 0.09;
+const EAP_PRICE = parseFloat(process.env.NEXT_PUBLIC_EAP_PRICE!);
 const RECEIVE_WALLET_ADDRESS =
   process.env.NEXT_PUBLIC_EAP_RECEIVE_WALLET_ADDRESS!;
 
@@ -84,10 +84,11 @@ export function HomeContent() {
   // Verification effect
   useEffect(() => {
     if (!verifyingTx) return;
-
+    
     const verify = async () => {
       try {
         const response = await checkEAPTransaction({ txHash: verifyingTx });
+        
         if (response?.data?.success) {
           toast.success('EAP Purchase Successful', {
             description:
@@ -152,6 +153,7 @@ export function HomeContent() {
       });
 
       if (tx) {
+        
         setVerifyingTx(tx);
         toast.success('Transaction Sent', {
           description: 'Transaction has been sent. Verifying your purchase...',

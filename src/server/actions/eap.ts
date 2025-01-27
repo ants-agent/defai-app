@@ -11,7 +11,7 @@ import { verifyUser } from './user';
 
 const RECEIVE_WALLET_ADDRESS =
   process.env.NEXT_PUBLIC_EAP_RECEIVE_WALLET_ADDRESS!;
-const EAP_PRICE = 1.0;
+const EAP_PRICE = parseFloat(process.env.NEXT_PUBLIC_EAP_PRICE!);
 
 interface MemoData {
   type: string;

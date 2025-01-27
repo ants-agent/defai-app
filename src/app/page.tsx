@@ -30,7 +30,7 @@ import { Button } from '@/components/ui/button';
 
 
 const navItems = [
-  { label: 'Recruiting', href: '/recruiting', icon: ClipboardCheck, target: '_self' },
+  { label: 'Recruiting', href: 'https://docs.antsai.io/joinus', icon: ClipboardCheck, target: '_blank' },
   { label: 'Github', href: 'https://git.new/ants-agent', icon: GitHubLogoIcon, target: '_blank' },
   { label: 'Discord', href: 'https://dub.sh/antsai', icon: DiscordLogoIcon, target: '_blank' },
   { label: 'Docs', href: 'https://docs.antsai.io', icon: BookOpenIcon, target: '_blank' },
@@ -171,7 +171,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
                 {/* Light mode image */}
                 <div className="relative dark:hidden">
                   <Image
-                    src="/banner-2to1.png"
+                    src="/landing_page_defai.png"
                     alt="Ants AI Interface"
                     width={1200}
                     height={675}
@@ -190,7 +190,7 @@ const Hero = ({ handleLogin }: { handleLogin: () => void }) => {
                 {/* Dark mode image */}
                 <div className="relative hidden dark:block">
                   <Image
-                    src="/banner-2to1.png"
+                    src="/landing_page_defai.png"
                     alt="Ants AI Interface"
                     width={1200}
                     height={675}

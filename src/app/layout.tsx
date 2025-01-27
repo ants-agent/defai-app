@@ -25,13 +25,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Ants AI',
-    default: 'Ants AI - Decentralize the Bridge between AI and Blockchain World',
+    template: '%s | DEFAI @Ants AI',
+    default: 'DEFAI @Ants AI - Decentralize the Bridge between AI and Blockchain World',
   },
   description: 'Decentralize the Bridge between AI and Blockchain World',
-
   icons: {
-    icon: '/favicon.svg',
+    icon: '/logo.svg',
   },
 };
 
