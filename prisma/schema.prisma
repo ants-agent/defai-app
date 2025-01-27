@@ -13,8 +13,11 @@ model User {
   privyId   String   @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  dcp Boolean @default(false)
 
   earlyAccess Boolean @default(false)
+  refCode   String   @unique @default(dbgenerated("substring(replace(cast(gen_random_uuid() as text), '-', ''), 1, 6)"))
+
 
   wallets       Wallet[]
   conversations Conversation[]
@@ -22,6 +25,8 @@ model User {
   Action        Action[]
   tokenStats    TokenStat[]
   TelegramChat  TelegramChat[]
+  UserCollectedData UserCollectedData?
+  
 
   @@map("users")
 }
@@ -53,6 +58,19 @@ model Conversation {
   Action   Action[]
 
   @@map("conversations")
+}
+
+
+model UserCollectedData {
+  id            String   @id @default(cuid())
+  twitterHandle String
+  refCode       String?
+  publicKey     String
+  createdAt     DateTime  @default(now())
+  ownerId       String   @unique
+
+  owner User @relation(fields: [ownerId], references: [id])
+  @@map("user_collected_data")
 }
 
 model Message {

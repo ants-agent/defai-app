@@ -91,7 +91,14 @@ const ExploreItems = [
        segment: "inbox",
        icon: Inbox,
        external: false,
-   }
+   },
+   {
+    title: "Onchain Intelligence",
+    url: "/onchain",
+    segment: "onchain",
+    icon: Inbox,
+    external: false,
+}
   // {
   //     title: "Automations",
   //     url: "/automations",

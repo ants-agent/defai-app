@@ -153,6 +153,7 @@ export function AccountContent() {
                               variant="default"
                               size="sm"
                               onClick={() => router.push('/home')}
+                              className="bg-teal-500/70 hover:bg-teal-500/90 dark:bg-teal-500/60 dark:hover:bg-teal-500/80"
                             >
                               Get Early Access
                             </Button>
