@@ -34,7 +34,7 @@ const RECEIVE_WALLET_ADDRESS =
 
 const EAP_BENEFITS = [
   'Support platform growth',
-  'Early access to features',
+  'Early access to features of your personal AI Agent and Onchain Intelligence',
   'Unlimited AI interactions',
   'Join early governance and decisions',
 ];
@@ -327,7 +327,7 @@ export function HomeContent() {
                   </div>
                   <div className="text-sm text-muted-foreground">
                     Funds will be allocated to cover expenses such as LLM
-                    integration, RPC data services, infrastructure maintenance,
+                    integration, RPC data services, Privy Wallet, infrastructure maintenance,
                     and other operational costs, all aimed at ensuring the
                     platform&apos;s stability and reliability.
                   </div>

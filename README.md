@@ -1,6 +1,8 @@
 # DeFAI in AI Agent
 
 
+A DeFi Agent that uses AI to help you make decisions.
+
 
 
 

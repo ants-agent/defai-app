@@ -26,7 +26,6 @@ export type AntsaiUser = Pick<
   'id' | 'privyId' | 'createdAt' | 'updatedAt' | 'earlyAccess' | 'wallets'
 > & {
   privyUser: PrivyUser;
-  hasEAP: boolean;
   telegramId?: string;
 };
 
