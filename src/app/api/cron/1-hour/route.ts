@@ -4,10 +4,6 @@ import { sendCryptoSummary } from '@/utilities/twitter/crypto-bot';
 
 export async function GET(req: NextRequest) {
   try {
-    
-
-
-
     const result = await sendCryptoSummary();
     return NextResponse.json({ success: true, data: result });
 
